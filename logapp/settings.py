@@ -1,5 +1,4 @@
 import os
-import secret_config
 from unipath import FSPath as Path
 
 PRODUCTION = ( 'IN_PRODUCTION' in os.environ )
@@ -34,7 +33,7 @@ STATIC_URL = '/static/'
 ADMIN_MEDIA_PREFIX = '/static/admin/'
 
 ROOT_URLCONF = 'urls'
-SECRET_KEY = secret_config.SECRET_KEY
+SECRET_KEY = os.environ['SECRET_KEY'] if os.environ['SECRET_KEY'] else 'wibbleB0b'
 
 ADMIN_MEDIA_PREFIX = '/media/admin/'
 STATIC_URL = '/static/'
@@ -113,8 +112,8 @@ if PRODUCTION:
 
 	EMAIL_HOST = 'slash.uk-noc.com'
 	EMAIL_PORT = 26
-	EMAIL_HOST_USER = secret_config.EMAIL_HOST_USER
-	EMAIL_HOST_PASSWORD = secret_config.EMAIL_HOST_PASSWORD
+	EMAIL_HOST_USER = os.environ['EMAIL_HOST_USER'] if os.environ['EMAIL_HOST_USER'] else 'user'
+	EMAIL_HOST_PASSWORD = os.environ['EMAIL_HOST_PASSWORD'] if os.environ['EMAIL_HOST_PASSWORD'] else 'pass'
 
 else:
 	EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
