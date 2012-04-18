@@ -6,8 +6,8 @@ admin.autodiscover()
 urlpatterns = patterns('',
 	url(r'^admin/', include(admin.site.urls)),
 
-	url(r'^$', 'main.views.index'),
-	url(r'^contact$', 'main.views.contact'),
+	url(r'^$', 'logapp.main.views.index'),
+	url(r'^contact$', 'logapp.main.views.contact'),
 
 	(r'^user/', include('registration.urls')),
 )
