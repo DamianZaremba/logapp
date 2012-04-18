@@ -32,7 +32,7 @@ STATIC_ROOT = ''
 STATIC_URL = '/static/'
 ADMIN_MEDIA_PREFIX = '/static/admin/'
 
-ROOT_URLCONF = 'urls'
+ROOT_URLCONF = 'logapp.urls'
 SECRET_KEY = os.environ['SECRET_KEY'] if os.environ['SECRET_KEY'] else 'wibbleB0b'
 
 ADMIN_MEDIA_PREFIX = '/media/admin/'
