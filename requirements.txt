@@ -1,0 +1,5 @@
+unipath
+django-registration
+Django == 1.4
+psycopg2 == 2.4.5
+gunicorn == 0.14.2

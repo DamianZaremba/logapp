@@ -1,0 +1,3 @@
+logapp/secret_config.py
+sqlite.db
+*.pyc

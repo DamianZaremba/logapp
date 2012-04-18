@@ -1,0 +1,67 @@
+{% extends "base_main.html" %}
+
+{% block title %}
+Home
+{% endblock %}
+
+{% block main %}
+	<div id="breadcrumbs">
+		<ul>
+			<li></li>
+			<li><a href="/">Home</a></li>
+		</ul>
+	</div>
+
+	<div class="section">
+		<div class="full">
+			<div class="box">
+				<div class="title">
+					Overview
+				</div>
+				<div class="content">
+					<p>LogApp is a logging application aimed at people who enjoy the outdoors.</p>
+					<p>Whether you're required to keep logs for permits/awards or just want to track progress LogApp has something to offer.</p>
+					<p>Currently we support the following log types:
+						<ul>
+							<li>Indoor/Trad Climbing</li>
+						</ul>
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="section">
+		<div class="half">
+			<div class="box">
+				<div class="title">
+					Who?
+				</div>
+				<div class="content">
+					<p>Damian is a Systems Administrator working for <a href="http://sub6.com">Sub6 </a></p>
+					<p>Outside of work he is a keen Climbing Instructor, Scout leader, walker and generally likes being outdoors.</p>
+					<p>When out doing group/solo work he likes to keep logs as evidence for permits and NGB awards.</p>
+					<p>As a hacker interested in open source and manipulating data, paper based logging was very limiting (and paper gets ruined very easily).</p>
+					<p>To allow a better use of the data and as a permanent record he created LogApp, a Django based logging system.</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="half">
+			<div class="box">
+				<div class="title">
+					Features
+				</div>
+				<div class="content">
+					<ul>
+						<li>GPL licensed - Take it, hack it, contribute to it and make the world a better place.</li>
+						<li>Secure - All traffic is encrypted via SSL, data is stored in a secured database, passwords are encrypted.</li>
+						<li>PDF exporting - Create professional looking diaries.</li>
+						<li>Social integration - Hook your account up to twitter and let everyone know what you've been up to.</li>
+						<li>Embeddable widgets - Share mapped routes on your site.</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+{% endblock %}

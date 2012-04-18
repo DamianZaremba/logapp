@@ -1,0 +1,106 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8" /> 
+	<title>LogApp - {% block title %}Unknown{% endblock %}</title>
+	
+	<meta name="apple-mobile-web-app-capable" content="no" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+	<meta name="viewport" content="width=device-width,initial-scale=0.69,user-scalable=yes,maximum-scale=1.00" />
+
+	<style type="text/css">
+		@import url("{{ MEDIA_URL }}logapp/css/style.css");
+		@import url("{{ MEDIA_URL }}logapp/css/forms.css");
+		@import url("{{ MEDIA_URL }}logapp/css/forms-btn.css");
+		@import url("{{ MEDIA_URL }}logapp/css/menu.css");
+		@import url('{{ MEDIA_URL }}logapp/css/style_text.css');
+		@import url("{{ MEDIA_URL }}logapp/css/datatables.css");
+		@import url("{{ MEDIA_URL }}logapp/css/fullcalendar.css");
+		@import url("{{ MEDIA_URL }}logapp/css/pirebox.css");
+		@import url("{{ MEDIA_URL }}logapp/css/modalwindow.css");
+		@import url("{{ MEDIA_URL }}logapp/css/statics.css");
+		@import url("{{ MEDIA_URL }}logapp/css/tabs-toggle.css");
+		@import url("{{ MEDIA_URL }}logapp/css/system-message.css");
+		@import url("{{ MEDIA_URL }}logapp/css/tooltip.css");
+		@import url("{{ MEDIA_URL }}logapp/css/wizard.css");
+		@import url("{{ MEDIA_URL }}logapp/css/wysiwyg.css");
+		@import url("{{ MEDIA_URL }}logapp/css/wysiwyg.modal.css");
+		@import url("{{ MEDIA_URL }}logapp/css/wysiwyg-editor.css");
+		@import url("{{ MEDIA_URL }}logapp/css/handheld.css");
+	</style>
+	
+	<!--[if lte IE 8]>
+		<script type="text/javascript" src="{{ MEDIA_URL }}logapp/js/excanvas.min.js"></script>
+	<![endif]-->
+	
+	<script type="text/javascript" src="{{ MEDIA_URL }}logapp/js/jquery-1.7.2.min.js"></script>
+	<script type="text/javascript" src="{{ MEDIA_URL }}logapp/js/jquery.backgroundPosition.js"></script>
+	<script type="text/javascript" src="{{ MEDIA_URL }}logapp/js/jquery.placeholder.min.js"></script>
+	<script type="text/javascript" src="{{ MEDIA_URL }}logapp/js/jquery.ui.1.8.17.js"></script>
+	<script type="text/javascript" src="{{ MEDIA_URL }}logapp/js/jquery.ui.select.js"></script>
+	<script type="text/javascript" src="{{ MEDIA_URL }}logapp/js/jquery.ui.spinner.js"></script>
+	<script type="text/javascript" src="{{ MEDIA_URL }}logapp/js/superfish.js"></script>
+	<script type="text/javascript" src="{{ MEDIA_URL }}logapp/js/supersubs.js"></script>
+	<script type="text/javascript" src="{{ MEDIA_URL }}logapp/js/jquery.datatables.js"></script>
+	<script type="text/javascript" src="{{ MEDIA_URL }}logapp/js/fullcalendar.min.js"></script>
+	<script type="text/javascript" src="{{ MEDIA_URL }}logapp/js/jquery.smartwizard-2.0.min.js"></script>
+	<script type="text/javascript" src="{{ MEDIA_URL }}logapp/js/pirobox.extended.min.js"></script>
+	<script type="text/javascript" src="{{ MEDIA_URL }}logapp/js/jquery.tipsy.js"></script>
+	<script type="text/javascript" src="{{ MEDIA_URL }}logapp/js/jquery.elastic.source.js"></script>
+	<script type="text/javascript" src="{{ MEDIA_URL }}logapp/js/jquery.jBreadCrumb.1.1.js"></script>
+	<script type="text/javascript" src="{{ MEDIA_URL }}logapp/js/jquery.customInput.js"></script>
+	<script type="text/javascript" src="{{ MEDIA_URL }}logapp/js/jquery.validate.min.js"></script>
+	<script type="text/javascript" src="{{ MEDIA_URL }}logapp/js/jquery.metadata.js"></script>
+	<script type="text/javascript" src="{{ MEDIA_URL }}logapp/js/jquery.filestyle.mini.js"></script>
+	<script type="text/javascript" src="{{ MEDIA_URL }}logapp/js/jquery.filter.input.js"></script>
+	<script type="text/javascript" src="{{ MEDIA_URL }}logapp/js/jquery.flot.js"></script>
+	<script type="text/javascript" src="{{ MEDIA_URL }}logapp/js/jquery.flot.pie.min.js"></script>
+	<script type="text/javascript" src="{{ MEDIA_URL }}logapp/js/jquery.flot.resize.min.js"></script>
+	<script type="text/javascript" src="{{ MEDIA_URL }}logapp/js/jquery.graphtable-0.2.js"></script>
+	<script type="text/javascript" src="{{ MEDIA_URL }}logapp/js/jquery.wysiwyg.js"></script>
+    <script type="text/javascript" src="{{ MEDIA_URL }}logapp/js/jquery.cookie.js"></script>
+	<script type="text/javascript" src="{{ MEDIA_URL }}logapp/js/controls/wysiwyg.image.js"></script>
+	<script type="text/javascript" src="{{ MEDIA_URL }}logapp/js/controls/wysiwyg.link.js"></script>
+	<script type="text/javascript" src="{{ MEDIA_URL }}logapp/js/controls/wysiwyg.table.js"></script>
+	<script type="text/javascript" src="{{ MEDIA_URL }}logapp/js/plugins/wysiwyg.rmFormat.js"></script>
+	<script type="text/javascript" src="{{ MEDIA_URL }}logapp/js/custom.js"></script>
+</head>
+<body>
+
+<div id="wrapper">
+	<div id="container">
+		<div id="top">
+			<h1 id="logo"><a href="./"></a></h1>
+			<div id="labels">
+				<ul>
+					<li><a href="/logout/" class="logout" alt="Logout" title="Logout"></a></li>
+				</ul>
+			</div>
+  			<div id="menu">
+			{% block top %}
+			{% endblock %}
+            </div>
+		</div>
+
+		<div id="left">
+			{% block left %}
+			{% endblock %}
+		</div>
+
+		<div id="right">
+			{% block main %}
+			<div>
+				<p>Unknown page :(</p>
+			</div>
+			{% endblock %}
+		</div>
+
+        <div id="footer">
+			<div class="split">&#169; Copyright 2012 <a href="http://damianzaremba.co.uk">Damian Zaremba</a>. All Rights Reserved.</div>
+			<div class="split right"><a href="http://github.com/DamianZaremba/LogApp">LogApp</a> v0.1</div>
+		</div>
+	</div>
+</div>
+
+</body>
+</html>

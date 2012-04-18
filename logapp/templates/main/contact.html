@@ -1,0 +1,70 @@
+{% extends "base_main.html" %}
+
+{% block title %}
+Contact
+{% endblock %}
+
+{% block main %}
+	<div id="breadcrumbs">
+		<ul>
+			<li></li>
+			<li><a href="/">Home</a></li>
+			<li><a href="/contact">Contact</a></li>
+		</ul>
+	</div>
+
+	<div class="section">
+		<div class="full">
+			<div class="box">
+				<div class="title">
+					Contact Options
+				</div>
+				<div class="content">
+					<h2>To report bugs</h2>
+					<p>Please use the issue tracker <a href="https://github.com/damianzaremba/logapp/issues">on GitHub</a></p>
+					<p>While I'll try and help anyone stuck, unless it's urgent email is <b>not</b> the best way to contact me.</p>
+
+					<h2>General questions</h2>
+					<p>For any general questions please use the form below.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="section">
+		<div class="full">
+			<div class="box">
+				<div class="title">
+					Contact Form
+				</div>
+				<div class="content">
+					<div class="row">
+						<label>Name</label>
+						<div class="right">
+							<input type="text" name="name" id="name" class="{validate:{required:true, messages:{required:'Please enter your name'}}}" />
+						</div>
+					</div>
+
+					<div class="row">
+						<label>Email</label>
+						<div class="right">
+							<input type="text" name="email" id="email" class="{validate:{required:true, email:true, messages:{required:'Please enter your email address'}}}" />
+						</div>
+					</div>
+
+					<div class="row">
+						<label>Message</label>
+						<div class="right">
+							<textarea id="message" name="message" class="{validate:{required:true, messages: {required:'Please enter a message'}}} grow"></textarea>
+						</div>
+					</div>
+
+					<div class="row">
+						<button type="submit" class="blue" name="save" value="Send"><span>Send</span></button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+{% endblock %}

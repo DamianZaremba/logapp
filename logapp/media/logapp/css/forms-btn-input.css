@@ -1,0 +1,57 @@
+.row .right input.btn,
+input.btn{
+	display : inline-block;
+	background : url(../gfx/forms-btn.gif) repeat-x left top #FFFFFF;
+	-moz-box-shadow: 1px 1px 0 #ededed;
+	-webkit-box-shadow: 1px 1px 0 #ededed;
+	box-shadow: 1px 1px 0 #ededed;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=1, Direction=135, Color='#ededed')";
+	filter: progid:DXImageTransform.Microsoft.Shadow(Strength=1, Direction=135, Color='#ededed');
+	border : 1px solid #d2d2d2;
+	outline : none;
+	padding : 0 15px;
+	margin : 0 1px 1px 0;
+	font : 12px/25px Arial;
+	font-weight : bold;
+	letter-spacing : 0.08em;
+	color : #7d7c7c;
+	text-transform : uppercase;
+    overflow : visible;
+	cursor : pointer;
+	width : auto;
+	height : 27px;
+}
+.row .right input.btn:first-child,
+input.btn:first-child{
+	margin : 0 0 1px 0;
+}
+.row .right input.btn:hover,
+input.btn:hover{
+	opacity : 0.7;
+	filter : alpha(opacity=70);
+}
+.row .right input.btn.red,
+input.btn.red {
+	border : 1px solid #ba0000;
+	background : url(../gfx/forms-btn.gif) repeat-x left -25px #FFFFFF;
+	border : 1px solid #ba0000;
+	color : #FFFFFF;
+}
+.row .right input.btn.green,
+input.btn.green {
+	background : url(../gfx/forms-btn.gif) repeat-x left -50px #FFFFFF;
+	border : 1px solid #4b9700;
+	color : #FFFFFF;
+}
+.row .right input.btn.blue,
+input.btn.blue {
+	background : url(../gfx/forms-btn.gif) repeat-x left -75px #FFFFFF;
+	border : 1px solid #0049ac;
+	color : #FFFFFF;
+}
+.row .right input.btn.orange,
+input.btn.orange{
+	background : url(../gfx/forms-btn.gif) repeat-x left -100px #FFFFFF;
+	border : 1px solid #e96e00;
+	color : #FFFFFF;
+}
